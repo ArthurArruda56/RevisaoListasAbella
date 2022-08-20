@@ -1,0 +1,430 @@
+# Lista 1 Questão 1
+numA = float(input('Digite um número qualquer: '))
+numB = float(input('Digite um valor qualquer: '))
+soma = numA + numB
+subt = numA - numB
+mult = numA * numB
+divisao = numA / numB
+resto = numA % numB
+print('A soma é {}, a subtração tem resultado {}, quanto a multiplicação o resultado é {}, a divisão apresenta resultado igual a {} e o resto da divisão é {}.'.format(soma, subt, mult, divisao, resto))
+print()
+# Lista 1 Questão 2
+num = int(input('Digite um número inteiro qualquer: '))
+ante = num - 1
+suce = num + 1
+print('O número {} tem como antecessor {} e como sucessor {}.'.format(num, ante, suce))
+print()
+# Lista 1 Questão 3
+num = int(input('Digite um valor inteiro qualquer: '))
+dobro = num * 2
+triplo = num * 3
+metade = num / 2
+print('O número {} tem como dobro {}, triplo {} e metade {} quando feitas as operações com o valor informado.'.format(num, dobro, triplo, metade))
+print()
+# Lista 1 Questão 4
+numA = float(input('Digite um número qualquer: '))
+numB = float(input('Digite um valor qualquer: '))
+numC = float(input('Informe um valor de sua preferência: '))
+media = (numA + numB + numC) / 3
+print('A média aritmética dos valores informados é {}.'.format(media))
+print()
+# Lista 1 Questão 5
+preco = float(input('Qual o valor do produto em questão? R$ '))
+desDez = preco * 0.9
+desVinte = preco * 0.8
+desCinquenta = preco * 0.5
+print('O valor do produto com 10% de desconto é R${:.2f}, já com 20% de desconto é R${:.2f} e com 50% de desconto é R${:.2f}.'.format(desDez, desVinte, desCinquenta))
+print()
+# Lista 1 Questão 6
+salario = float(input('Qual o seu salário? R$ '))
+reajuste = salario * 1.1
+print('Com o reajuste salarial, o empregado passa a ganhar R${:.2f}.'.format(reajuste))
+print()
+# Lista 1 Questão 7
+num = int(input('Digite um valor do conjunto dos inteiros: '))
+resto = num % 2
+if resto == 0:
+    print('O número informado é par.')
+elif resto == 1:
+    print('O número informado é ímpar.')
+print()
+# Lista 1 Questão 8
+nota1 = float(input('Digite sua primeira nota: '))
+nota2 = float(input('Digite sua segunda nota: '))
+media = (nota1 + nota2) / 2
+print('Sua média bimestral foi {}.'.format(media))
+if media < 7:
+    print('REPROVADO!')
+elif media >= 7 and media < 10:
+    print('APROVADO!')
+elif media == 10:
+    print('Aprovado com Distinção!')
+print()
+# Lista 1 Questão 9
+numA = int(input('Digite um número inteiro qualquer: '))
+numB = int(input('Informe um valor qualquer do conjunto dos inteiros: '))
+if numA > numB:
+    print('O primeiro número informado, {}, é maior que o segundo {}.'.format(numA, numB))
+elif numB > numA:
+    print('O segundo número informado, {}, é maior que o primeiro {}.'.format(numB, numA))
+else:
+    print('O primeiro e o segundo números são iguais.')
+print()
+# Lista 1 Questão 10
+numB = int(input('Digite um valor qualquer, desde que seja inteiro: '))
+numC = int(input('Digite um número dentro do conjunto dos inteiros: '))
+G = numB
+A  = numC
+Y = G
+G = A
+A = Y
+print(G,A)
+print()
+# Lista 1 Questão 11
+# >=280 (20%) -- 280 ate 700 (15%) -- 700 ate 1500 (10%) -- <1500 (5%)
+# salario antigo, percentual de aumento, valor de aumento, novo salário
+salario = float(input('Informe o seu salário: R$ '))
+if salario > 0 and salario <= 280:
+    aumento = salario * 0.2
+elif salario > 280 and salario <= 700:
+    aumento = salario * 0.15
+elif salario > 700 and salario <= 1500:
+    aumento = salario * 0.1
+elif salario > 1500:
+    aumento = salario * 0.05
+if aumento == salario * 0.2:
+    percentual = '20%'
+elif aumento == salario * 0.15:
+    percentual = '15%'
+elif aumento == salario * 0.1:
+    percentual = '10%'
+elif aumento == salario * 0.5:
+    percentual = '5%'
+print('O antigo salário era R${:.2f}, e o percentual a ser aumentado era {}.'.format(salario, percentual))
+newPayment = salario + aumento
+print('Com o reajuste, é acrescido R${:.2f} ao salário anterior, e o novo salário passa a ser de R${:.2f}.'.format(aumento, newPayment))
+print()
+# Lista 1 Questão 12
+nota1 = float(input('Digite sua primeira nota: '))
+nota2 = float(input('Digite sua segunda nota: '))
+media = (nota1 + nota2)/2
+print(f'Sua média foi: {media}.')
+if media > 0 and media <= 4:
+    print('Média de conceito E.')
+elif media > 4 and media <= 6:
+    print('Média de conceito D.')
+elif media > 6 and media <= 7.5:
+    print('Média de conceito C.')
+elif media > 7.5 and media <= 9:
+    print('Média de conceito B.')
+elif media > 9 and media < 10:
+    print('Média de conceito A.')
+print()
+# Lista 2 Questão 1
+print('Alo Mundo!')
+print()
+# Lista 2 Questão 2
+numero = float(input('Informe um número qualquer: '))
+print(f'O numéro informado foi {numero}')
+print()
+# Lista 2 Questão 3
+numX = float(input('Digite um número aleatório: '))
+numY = float(input('Informe ao computador um número qualquer: '))
+soma = numX + numY
+print(f'A soma dos números {numX} e {numY} é {soma}')
+print()
+# Lista 2 Questão 4
+notaF = float(input('Digite a sua primeira nota bimestral: '))
+notaI = float(input('Digite a sua segunda nota bimestral: '))
+notaR = float(input('Digite a sua terceira nota bimestral: '))
+notaE = float(input('Digite a sua quarta nota bimestral: '))
+media = (notaF + notaI + notaR + notaE)/4
+print('A média obtida a partir das notas desse aluno é {}.'.format(media))
+print()
+# Lista Questão 5
+meters = float(input('Informe uma medida em metros: '))
+centi = meters * 100
+print('O valor {}m quando convertido fica {}cm.'.format(meters, centi))
+print()
+# Lista 2 Questão 6
+raio = float(input('Informe a medida do raio do círculo cujo a área deseja ser calculada: '))
+area = (raio ** 2) * 3.14
+print(f'Com a medida do raio sendo {raio}cm, a área do cículo é {area}.')
+print()
+# Lista 2 Questão 7
+lado = float(input('Informe uma medida de lado para ser calculada a área de um quadrado: '))
+dobroArea = (lado ** 2) * 2
+print('O dobro da área do quadrado a partir da medida informada é {}.'.format(dobroArea))
+print()
+# Lista 2 Questão 8
+#OBS: eu colocaria mais uma variavel, uma para horas trabalhadas no dia e outra para as trabalhadas no mês,  para ser um calculo mais preciso
+valorHora = float(input('Qual o valor da sua hora de trabalho? '))
+horasTrabalhadas = int(input('Quantas horas você trabalha por mês? '))
+salario = valorHora * horasTrabalhadas
+print('A partir dos dados coletados, conclui-se que o salário da pessoa é R${:.2f}.'.format(salario))
+print()
+# Lista 2 Questão 9
+fah = float(input('Informe uma temperatura em Fahrenheit: '))
+celsius = ((fah - 32) / 9) * 5
+print(f'A referida temperatura em Celsius é {celsius}')
+print()
+# Lista 2 Questão 10
+celsius = float(input('Informe uma temperatura em Celsius: '))
+fah = ((celsius / 5) * 9 ) + 32
+print(f'A referida temperatura em Fahrenheit é {fah}')
+print()
+# Lista 2 Questão 11
+numInt = int(input('Informe um número inteiro: '))
+numZ = int(input('Digite um número do conjunto dos inteiros: '))
+numReal = float(input('Informe um número do conjunto dos números reais: '))
+letraG = (numInt * 2) * (numZ / 2)
+letraA = (numInt * 3) + numReal
+letraY = numReal ** 3
+print(f'O primeiro cálculo resulta em {letraG}, já o segundo resulta em {letraA} e o terceiro resulta em {letraY}.')
+print()
+# Lista 2 Questão 12
+height = float(input('Informe uma altura: '))
+idealWeight = (72.7 * height) - 58
+print(f'O peso ideal dessa pessoa é {idealWeight}.')
+print()
+# Lista 2 Questão 13
+height = float(input('Informe sua altura: '))
+sexo = str(input('Digite a letra correspondente ao seu gênero: ')).upper
+if sexo == 'H' or sexo == 'h':
+    peso = (72.7 * height) - 58
+    print('O peso ideal dessa pessoa é {}.'.format(peso))
+elif sexo == 'M' or sexo == 'm':
+    peso = (62.1 * height) - 44.7
+    print('O peso ideal dessa pessoa é {}.'.format(peso))
+else:
+    print('Não é possível fazer o cálculo pois o dado de gênero informado não está cadastrado.')
+print()
+# Lista 2 Questão 14
+pesoTotal = float(input('Informe o peso de peixes pescado: '))
+taxa = 4
+if pesoTotal <= 50:
+    print('Não houve excesso de peso, logo não será paga uma multa.')
+elif pesoTotal > 50:
+    excesso = pesoTotal - 50
+    multa = excesso * taxa
+    print('O peso excedido foi de {}Kg e o valor da multa é R${:.2f}.'.format(excesso, multa))
+print()
+# Lista 2 Questão 15
+#imposto: 11% imposto de renda IR, 8% INSS, 5% sindicato
+valorHora = float(input('Qual o valor da sua hora de trabalho? '))
+workingHours = int(input('Quantas horas você trabalha em um mês? '))
+salario = valorHora * workingHours
+INSS = salario * 0.08
+sindicato = salario * 0.05
+salarioLiquido = salario * 0.76
+print('Seu salario bruto é R${:.2f}, foi pago ao INSS R${:.2f}, já ao sindicato foi pago R${:.2f}, sobrando assim como seu salário líquido R${:.2f}.'.format(salario, INSS, sindicato, salarioLiquido))
+print()
+# Lista 3 Questão 1
+numB = float(input('Digite um número qualquer: '))
+numI = float(input('Informe um número qualquer: '))
+if numB > numI:
+    print('O primeiro número informado, {}, é o maior.'.format(numB))
+elif numB < numI:
+    print(f'O segundo número informado, {numI}, é o maior.')
+else:
+    print('Ambos os número informados possuem o mesmo valor.')
+print()
+# Lista 3 Questão 2
+number = float(input('Informe um valor qualquer ao computador: '))
+if number >= 0:
+    print('O valor informado é positivo.')
+elif number < 0:
+    print('O valor informado é negativo.')
+print()
+# Lista 3 Questão 3
+sexo = input('Digite a letra correspondente ao seu sexo biológico: ').upper()
+# print(sexo) [confirmação]
+if sexo == 'M':
+    print('Você é do sexo masculino.')
+elif sexo == 'F':
+    print('Você é do sexo feminino.')
+elif (sexo != 'M') or (sexo != 'F'):
+    print('Sexo inválido.')
+print()
+# Lista 3 Questão 4
+letra = str(input('Digite uma letra do alfabeto: ')).lower()
+# print(letra)  [confirmacao]
+if letra == 'a' or letra == 'e' or letra == 'i' or letra == 'o' or letra == 'u':
+        print('A letra digitada é uma vogal.')
+elif letra == 'b' or letra == 'c' or letra == 'd' or letra == 'f' or letra == 'g' or letra == 'h' or letra == 'j' or letra == 'k' or letra == 'l' or letra == 'm' or letra == 'n' or letra == 'p' or letra == 'q' or letra == 'r' or letra == 's' or letra == 't' or letra == 'v' or letra == 'w' or letra == 'x' or letra == 'y' or letra == 'z':
+        print('A letra digitada é uma consoante.')
+print()
+# Lista 3 Questão 5
+numP = float(input('Informe um número qualquer: '))
+numA = float(input('Digite um número qualquer: '))
+numN = float(input('Digite um valor numérico qualquer: '))
+if numP > numA and numP > numN:
+    print('O primeiro número informado é o maior. Número {}.'.format(numP))
+elif numA > numP and numA > numN:
+    print(f'O segundo número informado é o maior. Número {numA}.')
+elif numN > numP and numN > numA:
+    print(f'O terceiro número informado é o maior. Número {numN}.')
+else:
+    print('Não existe APENAS UM número maior.')
+print()
+# Lista 3 Questão 6
+numA = float(input('Digite um número qualquer: '))
+numC = float(input('Informe um número qualquer: '))
+numE = float(input('Informe um valor numérico qualquer: '))
+if numA > numC and numA > numE:
+    if numC > numE:
+        print(f'O primeiro número informado, {numA}, é o maior. Quanto ao menor número, foi o terceiro a ser informado {numE}.')
+    elif numC < numE:
+        print(f'O primeiro número informado, {numA}, é o maior. Quanto ao meno número, foi o segundo a ser informado {numC}.')
+    else:
+        print('Não existe APENAS UM número MAIOR E APENAS UM número MENOR.')
+elif numA < numC and numC > numE:
+    if numA > numE:
+        print(f'O segundo número informado, {numC}, é o maior. Quanto ao menor número, foi o terceiro a ser informado {numE}.')
+    elif numA < numE:
+        print(f'O segundo número informado, {numC}, é o maior. Quanto ao menor número, foi o primeiro a ser informado {numA}.')
+    else:
+        print('Não existe APENAS UM número MAIOR E APENAS UM número MENOR.')
+elif numA < numE and numC < numE:
+    if numA > numC:
+        print(f'O terceiro número informado, {numE}, é o maior. Quanto ao menor número, foi o segundo a ser informado {numC}.')
+    elif numA < numC:
+        print(f'O terceiro número informado, {numE}, é o maior. Quanto ao menor número, foi o primeiro a ser informado {numA}.')
+    else:
+        print('Não existe APENAS UM número MAIOR E APENAS UM número MENOR.')
+print()
+# Lista 3 Questão 6
+numA = float(input('Digite um número qualquer: '))
+numC = float(input('Informe um número qualquer: '))
+numE = float(input('Informe um valor numérico qualquer: '))
+if numA > numC and numA > numE:
+    if numC > numE:
+        print(f'O primeiro número informado, {numA}, é o maior. Quanto ao menor número, foi o terceiro a ser informado {numE}.')
+    elif numC < numE:
+        print(f'O primeiro número informado, {numA}, é o maior. Quanto ao meno número, foi o segundo a ser informado {numC}.')
+    else:
+        print('Não existe APENAS UM número MAIOR E APENAS UM número MENOR.')
+elif numA < numC and numC > numE:
+    if numA > numE:
+        print(f'O segundo número informado, {numC}, é o maior. Quanto ao menor número, foi o terceiro a ser informado {numE}.')
+    elif numA < numE:
+        print(f'O segundo número informado, {numC}, é o maior. Quanto ao menor número, foi o primeiro a ser informado {numA}.')
+    else:
+        print('Não existe APENAS UM número MAIOR E APENAS UM número MENOR.')
+elif numA < numE and numC < numE:
+    if numA > numC:
+        print(f'O terceiro número informado, {numE}, é o maior. Quanto ao menor número, foi o segundo a ser informado {numC}.')
+    elif numA < numC:
+        print(f'O terceiro número informado, {numE}, é o maior. Quanto ao menor número, foi o primeiro a ser informado {numA}.')
+    else:
+        print('Não existe APENAS UM número MAIOR E APENAS UM número MENOR.')
+print()
+# Lista 3 Questão 7
+produtoG = float(input('Digite o valor do primeiro produto: R$ '))
+produtoA = float(input('Digite o valor do segundo produto: R$ '))
+produtoY = float(input('Digite o valor do terceiro produto: R$ '))
+if produtoG > produtoY and produtoA > produtoY:
+    print('O terceiro produto informado é o mais barato, saindo no valor de R${:.2f}.'.format(produtoY))
+elif produtoG > produtoA and produtoA < produtoY:
+    print('O segundo produto informado é o mais barato, saindo no valor de R${:.2f}.'.format(produtoA))
+elif produtoG < produtoA and produtoG < produtoY:
+    print('O primeiro produto informado é o mais barato, saindo no valor de R${:.2f}.'.format(produtoG))
+else:
+    print('Não existe APENAS UM produto mais BARATO.')
+print()
+# Lista 3 Questão 8
+numA = float(input('Digite um número qualquer: '))
+numR = float(input('Informe um número qualquer: '))
+numO = float(input('Digite um valor numérico qualquer: '))
+if numA > numR and numA > numO:
+    if numR > numO:
+        print(f'{numA}, {numR}, {numO}.')
+    elif numR < numO:
+        print(f'{numA}, {numO}, {numR}.')
+    elif numR == numO:
+        print('Inválido. Dois dos números informados são iguais.')
+elif numA < numR and numR > numO:
+    if numA > numO:
+        print(f'{numR}, {numA}, {numO}.')
+    elif numA < numO:
+        print(f'{numR}, {numO}, {numA}.')
+    elif numA == numO:
+        print('Inválido. Dois dos números informados são iguais.')
+elif numA < numO and numR < numO:
+    if numA > numR:
+        print(f'{numO}, {numA}, {numR}.')
+    elif numA < numR:
+        print(f'{numO}, {numR}, {numA}.')
+    elif numA == numO:
+        print('Inválido. Dois dos números informados são iguais.')
+else:
+    print('Inválido. Todos os números são iguais.')
+print()
+# Lista 3 Questão 9
+turno = str(input('Em que turno você estuda, Matutino, Vespertino ou Noturno? Indique o seu turno com a inicial correspondente a ele: ')).upper()
+print(turno)
+if turno == 'M':
+    print('Bom Dia!')
+elif turno == 'V':
+    print('Boa Tarde!')
+elif turno == 'N':
+    print('Boa Noite!')
+else:
+    print('Valor Inválido!')
+print()
+# Lista 3 Questão 10
+day = int(input('Digite o valor correspondente ao dia da semana, os valores indo de 1 a 7, sendo 1 correspondente a domingo e 7 correspondente a sábado: '))
+if day == 1:
+    print('Domingo!')
+elif day == 2:
+    print('Segunda!')
+elif day == 3:
+    print('Terça!')
+elif day == 4:
+    print('Quarta!')
+elif day == 5:
+    print('Quinta!')
+elif day == 6:
+    print('Sexta!')
+elif day == 7:
+    print('Sábado!')
+elif day < 1 or day > 7:
+    print('Valor Inválido!')
+print()
+# Lista 3 Questão 11 (toda vez fico preso, mas acho que estou com o raciocínio certo)
+'''1- Se o ano for uniformemente divisível por 4, vá para a etapa 2. Caso contrário, vá para a etapa 5.
+2- Se o ano for uniformemente divisível por 100, vá para a etapa 3. Caso contrário, vá para a etapa 4.
+3- Se o ano for uniformemente divisível por 400, vá para a etapa 4. Caso contrário, vá para a etapa 5.
+4- O ano é bissexto (tem 366 dias).
+5- O ano não é um ano bissexto (tem 365 dias).'''
+year = int(input('Digite o ano que deseja ser analisado: '))
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+    print('O ano {} É bissexto!'.format(year))
+else:
+    print(f'O ano {year} NÃO É bissexto!')
+print()
+# Lista 3 Questão 12
+day = int(input('Digite um dia qualquer: '))
+month = int(input('Digite um mês qualquer: '))
+year = int(input('Digite um ano qualquer: '))
+if year > 0:
+    if month == 1 or month == 3 or month == 5 or month == 7 or month == 8 or month == 10 or month == 12:
+        if day >= 1 and day <= 31:
+            print(f'A data {day}/{month}/{year} é válida.')
+        else:
+            print('Data Inválida!')
+    elif month == 4 or month == 6 or month == 9 or month == 11:
+        if day > 0 and day < 31:
+            print(f'A data {day}/{month}/{year} é válida.')
+        else:
+            print('Data Inválida!')
+    elif month == 2:
+        if day > 0 and day <= 28:
+            print('A data {}/{}/{} é válida.'.format(day, month, year))
+        else:
+            print('Data Inválida!')
+    else:
+        print('Data Inválida!')
+else:
+    print('Data Inválida!')
+print()
